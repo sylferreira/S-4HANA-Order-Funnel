@@ -1,6 +1,11 @@
 # S-4HANA-Order-Funnel
 O Sales Order Funnel foi desenvolvido em Python a partir da FACT_ORDER_DAILY, que representa a fotografia dos pedidos registrados no dia. Para cada Sales Order/Item, são considerados quantidade solicitada, quantidade confirmada, quantidade em aberto, valor líquido, status do pedido e, principalmente, o Rejection Reason, que permite identificar a causa pela qual uma parcela do pedido não avançou no processo. Dessa forma, o funil deixa de ser apenas um acompanhamento de volume e passa a representar quanto do Order Book tem potencial de conversão em faturamento e quanto está sendo perdido ao longo do processo.
 
+<img width="862" height="378" alt="Captura de tela 2026-08-19 164242" src="https://github.com/user-attachments/assets/3a06fb35-7050-4925-a472-6ddc9ff5377b" />
+
 A dinâmica financeira começa pelo Total de Entrada de Pedidos. A partir desse valor, o modelo calcula automaticamente o impacto de cada causa de rejeição — como Corte CSL, Suspenso, Crítica de Preço e Erro de Cadastro — considerando também o tratamento específico dos pedidos parcialmente confirmados. Nesses casos, somente a parcela não confirmada é considerada como impacto negativo. Ao final, o saldo representa o Faturamento Potencial, permitindo calcular a conversão do Order Book e identificar onde estão as maiores perdas financeiras. Essa estrutura também alimenta análises de Top Canais, Clientes/Lojas e SKUs críticos, transformando a fotografia do pedido em uma análise automatizada de root causes para orientar as ações de Customer Service, Demand Planning e Supply Chain.
+
+<img width="893" height="446" alt="waterfall" src="https://github.com/user-attachments/assets/c28eacc9-204f-4266-b794-6feee1a625e3" />
+
 
 Note: The datasets included in this repository are synthetic/demo datasets created for portfolio and educational purposes and do not contain real customer, commercial or SAP transactional data.
