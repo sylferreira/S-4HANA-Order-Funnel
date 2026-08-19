@@ -1,4 +1,4 @@
-# S-4HANA-Order-Funnel
+# S/4HANA Order Funnel
 O Sales Order Funnel foi desenvolvido em Python a partir da FACT_ORDER_DAILY, que representa a fotografia dos pedidos registrados no dia. Para cada Sales Order/Item, são considerados quantidade solicitada, quantidade confirmada, quantidade em aberto, valor líquido, status do pedido e, principalmente, o Rejection Reason, que permite identificar a causa pela qual uma parcela do pedido não avançou no processo. Dessa forma, o funil deixa de ser apenas um acompanhamento de volume e passa a representar quanto do Order Book tem potencial de conversão em faturamento e quanto está sendo perdido ao longo do processo.
 
 <img width="862" height="378" alt="Captura de tela 2026-08-19 164242" src="https://github.com/user-attachments/assets/3a06fb35-7050-4925-a472-6ddc9ff5377b" />
